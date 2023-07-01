@@ -56,6 +56,39 @@ html{
 
 
 
+    .text-glav{
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20px;
+        width: 288px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .button-1{
+        text-align: center;
+        padding-top: 15px;
+    }
+    button.button-1{
+        background-color: #0061FF;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: bold;
+        border: 0px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
 
     .bottom{
         background-color: #0061FF;
@@ -64,12 +97,14 @@ html{
         color: #ffffff;
         padding: 15px;
         font-size: 20px;
-        position: fixed;
+        position: static;
         bottom: 0;
         width: 100%;
+        margin-top: 40px;
     }
     .tg::before{
         font-size: 30px;
+        color: #ffffff;
     }
     .links{
         padding-top: 20px;
@@ -77,5 +112,23 @@ html{
     .inc{
         font-size: 15px;
         padding-top: 30px;
+    }
+    .text-bottom-glav{
+        padding-top: 25px;
+    }
+    .text-bottom{
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 130%;
+        color: #e5e7eb;
+        margin: 15px 0px;
+    }
+    a.text-bottom-a{
+        color: #e5e7eb;
+        text-decoration: none;
+        box-decoration-break: none;
+    }
+    a.text-bottom-a:hover{
+        color: #ffffff;
     }
 }
