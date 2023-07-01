@@ -57,14 +57,15 @@ html{
 
 
     .text-glav{
-        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-        font-weight: bold;
-        font-size: 30px;
+        font-family: TT Interphases Pro,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;    
         text-align: center;
         padding-top: 20px;
         width: 288px;
         margin-left: auto;
         margin-right: auto;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
     }
     .button-1{
         text-align: center;
