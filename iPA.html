@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css?v=1.2" type="text/css">
+    <link rel="stylesheet" href="css/iPA.css?v=1.2" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>iPAfiles.ru</title>
+
+    <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
+
+    <script>
+function searchFunction() {
+  var input, filter, elements, txtValue;
+  input = document.getElementById('searchInput');
+  filter = input.value.toUpperCase();
+  
+  // Получить все элементы с классом myClass
+  elements = document.querySelectorAll(".ipa");
+
+  for (var i = 0; i < elements.length; i++) {
+    txtValue = elements[i].textContent || elements[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      elements[i].style.display = 'flex';
+    } else {
+      elements[i].style.display = 'none';
+    }
+  }
+}
+    </script>
+
+    <script>
+ import { Ring } from '@uiball/loaders'
+<Ring 
+ size={40}
+ lineWeight={5}
+ speed={2} 
+ color="black" 
+/>
+    </script>
+
+    <script>
+
+    </script>
+
+
+<script>
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDsBrcHnVT9_Iww7IsS4JAmd055IxkfFx8",
+  authDomain: "ipafiles-8eb0f.firebaseapp.com",
+  projectId: "ipafiles-8eb0f",
+  storageBucket: "ipafiles-8eb0f.appspot.com",
+  messagingSenderId: "150746712513",
+  appId: "1:150746712513:web:e9e5d521edc03788a00740",
+  measurementId: "G-WSYNJ0XTGR"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="all">
+            <div class="head">
+                <div class="head-all">
+                <main class="main-head">
+                    <a href="index.html">
+                    <div class="logo">
+                        <img src="photo/logo.png" alt="" width="150px" class="logo">
+                        iPAfiles
+                    </div>
+                    </a>
+                    <div class="menu">
+                        <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12h18"></path>
+                            <path d="M3 6h18"></path>
+                            <path d="M3 18h18"></path>
+                          </svg>
+                    </div>
+                </main>
+                </div>
+            </div>
+
+
+
+
+            <div class="body">
+               
+                <div class="text-glav">
+                    Все iPA файлы
+                </div>
+                <div class="search">
+                    <svg  class="icon" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                        <path d="m21 21-4.35-4.35"></path>
+                      </svg>
+                      <input placeholder="Поиск" type="search" class="input" id="searchInput" onkeyup="searchFunction()">
+                  </div>
+
+
+                <div class="allipa" id="allipa">
+
+
+                <div class="ipa" id="tinkoff">
+                    <img src="https://acdn.tinkoff.ru/static/pages/files/ba002123-6b93-4af2-855e-3a33b8bc0a08.png" width="54px" class="icon-ipa" height="54px" alt="">
+                    <div class="name">Tinkoff
+                    <div class="info">Мобильный банкинг</div>
+                    </div>
+                    <div class="button-download">
+                        <a href="#" onclick="addIdToSvg(this)" download="tinkoff.ipa">
+                        <svg width="35" height="35" fill="none" class="btn-download" id="svg1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <path d="m7 10 5 5 5-5"></path>
+                            <path d="M12 15V3"></path>
+                          </svg>
+                        </a>
+                        <svg
+                            class="ring"
+                            id="svg2"
+                            viewBox="25 25 50 50"
+                            stroke-width="5"
+                            >
+                            <circle cx="50" cy="50" r="20" />
+                        </svg>
+                        
+                    </div>
+                </div>
+
+                <div class="top">
+                    Самые популярный iPA файлы:
+                </div>
+                <div class="ipa-top">
+                    
+                    
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="bottom">
+            <div class="all-bottom">
+                <div class="text-bottom-glav">
+                    Подписывайтесь на нас
+                </div>
+                <div class="links">
+                    <a href="https://t.me/ipafilesru" target="_blank">
+                        <i class="fa fa-telegram tg"></i>
+                    </a>
+                </div>
+                <div class="text-bottom-glav">
+                    Бесплатные файлы
+                </div>
+                <div class="text-bottom">
+                    <a href="" class="text-bottom-a">
+                    Приложения
+                    </a>
+                </div>
+                <div class="text-bottom">
+                    <a href="" class="text-bottom-a">
+                    Игры
+                    </a>
+                </div>
+                <div class="text-bottom">
+                    <a href="" class="text-bottom-a">
+                    Читы для игр
+                    </a>
+                </div>
+                <div class="text-bottom">
+                    <a href="" class="text-bottom-a">
+                    Музыка
+                    </a>
+                </div>
+                <div class="inc">
+                    &copy; iPAfiles, Inc
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
