@@ -42,7 +42,45 @@ function searchFunction() {
     </script>
 
     <script>
+function addIdToSvg() {
+  const div = document.getElementById('allipa');
+  const svgs = div.querySelectorAll('svg');
+  svgs.forEach((svg, index) => {
+    svg.id = 'my-svg-' + index;
+  });
 
+    var svg1 = document.getElementById('my-svg-0') 
+    var svg2 = document.getElementById('my-svg-1');
+    
+    
+    svg1.style.display = 'inline';
+    svg2.style.display = 'none';
+    
+    if (svg1.style.display === 'none') {
+      svg1.style.display = 'inline';
+      svg2.style.display = 'none';
+    } else {
+      svg1.style.display = 'none';
+      svg2.style.display = 'inline';
+    }
+    setTimeout(function() {
+      svg1.style.display = 'inline';
+      svg2.style.display = 'none';
+    }, 10000); // 10 секунд
+}
+    </script>
+
+    <script>
+var input = document.getElementById('searchInput');
+var div = document.getElementById('allipa');
+
+input.addEventListener('input', () => {
+  if (input.value === '') {
+    div.style.display = 'none';
+  } else {
+    div.style.display = 'block';
+  }
+});
     </script>
 
 
@@ -118,12 +156,12 @@ const analytics = getAnalytics(app);
                     <div class="start">
                     <img src="https://acdn.tinkoff.ru/static/pages/files/ba002123-6b93-4af2-855e-3a33b8bc0a08.png" width="54px" class="icon-ipa" height="54px" alt="">
                     <div class="name">Tinkoff
-                    <div class="info">Мобильный банкинг</div>
+                    <div class="info">Мобильный банк</div>
                     </div>
                     </div>
                     <div class="end">
                     <div class="button-download">
-                        <a href="#" onclick="addIdToSvg(this)" download="tinkoff.ipa">
+                        <a href="#" onclick="addIdToSvg()" download="tinkoff.ipa">
                         <svg width="35" height="35" fill="none" class="btn-download" id="svg1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <path d="m7 10 5 5 5-5"></path>
@@ -143,12 +181,197 @@ const analytics = getAnalytics(app);
                     </div>
                 </div>
 
+                <div class="ipa" id="tiktok">
+                    <div class="start">
+                    <img src="https://www.freepnglogos.com/uploads/tik-tok-logo-png/tik-tok-android-application-logos-3.png" width="54px" class="icon-ipa" height="54px" alt="">
+                    <div class="name">TikTok
+                    <div class="info">Развлечения</div>
+                    </div>
+                    </div>
+                    <div class="end">
+                    <div class="button-download">
+                        <a href="#" onclick="addIdToSvg()" download="tinkoff.ipa">
+                        <svg width="35" height="35" fill="none" class="btn-download" id="svg1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <path d="m7 10 5 5 5-5"></path>
+                            <path d="M12 15V3"></path>
+                          </svg>
+                        </a>
+                        <svg
+                            class="ring"
+                            id="svg2"
+                            viewBox="25 25 50 50"
+                            stroke-width="5"
+                            >
+                            <circle cx="50" cy="50" r="20" />
+                        </svg>
+                        
+                    </div>
+                    </div>
+                </div>    
+                    <div class="ipa" id="YandexMusic">
+                        <div class="start">
+                        <img src="https://img.icons8.com/?size=1x&id=FHhIGGevoHnP&format=png" width="54px" class="icon-ipa" height="54px" alt="">
+                        <div class="name">Яндекс музыка
+                        <div class="info">Музыка</div>
+                        </div>
+                        </div>
+                        <div class="end">
+                        <div class="button-download">
+                            <a href="#" onclick="addIdToSvg()" download="tinkoff.ipa">
+                            <svg width="35" height="35" fill="none" class="btn-download" id="svg1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <path d="m7 10 5 5 5-5"></path>
+                                <path d="M12 15V3"></path>
+                              </svg>
+                            </a>
+                            <svg
+                                class="ring"
+                                id="svg2"
+                                viewBox="25 25 50 50"
+                                stroke-width="5"
+                                >
+                                <circle cx="50" cy="50" r="20" />
+                            </svg>
+                            
+                        </div>
+                        </div>
+                    </div> 
+
+                    <div class="ipa" id="spotify">
+                        <div class="start">
+                        <img src="https://img.icons8.com/?size=512&id=FwwoyZ9kCHZp&format=png" width="54px" class="icon-ipa" height="54px" alt="">
+                        <div class="name">Spotify
+                        <div class="info">Музыка</div>
+                        </div>
+                        </div>
+                        <div class="end">
+                        <div class="button-download">
+                            <a href="#" onclick="addIdToSvg()" download="tinkoff.ipa">
+                            <svg width="35" height="35" fill="none" class="btn-download" id="svg1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <path d="m7 10 5 5 5-5"></path>
+                                <path d="M12 15V3"></path>
+                              </svg>
+                            </a>
+                            <svg
+                                class="ring"
+                                id="svg2"
+                                viewBox="25 25 50 50"
+                                stroke-width="5"
+                                >
+                                <circle cx="50" cy="50" r="20" />
+                            </svg>
+                            
+                        </div>
+                        </div>
+                    </div> 
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
                 <div class="top">
                     Самые популярный iPA файлы:
                 </div>
                 <div class="ipa-top">
                     
+                    <div class="ipatop" id="tiktok">
+                        <div class="start">
+                        <img src="https://www.freepnglogos.com/uploads/tik-tok-logo-png/tik-tok-android-application-logos-3.png" width="54px" class="icon-ipa" height="54px" alt="">
+                        <div class="name">TikTok
+                        <div class="info">Развлечения</div>
+                        </div>
+                        </div>
+                        <div class="end">
+                        <div class="button-download">
+                            <a href="#" onclick="addIdToSvg()" download="tinkoff.ipa">
+                            <svg width="35" height="35" fill="none" class="btn-download" id="svg1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <path d="m7 10 5 5 5-5"></path>
+                                <path d="M12 15V3"></path>
+                              </svg>
+                            </a>
+                            <svg
+                                class="ring"
+                                id="svg2"
+                                viewBox="25 25 50 50"
+                                stroke-width="5"
+                                >
+                                <circle cx="50" cy="50" r="20" />
+                            </svg>
+                            
+                        </div>
+                        </div>
+                    </div>    
+                    <div class="ipa-top">
                     
+                        <div class="ipatop" id="YandexMusic">
+                            <div class="start">
+                            <img src="https://img.icons8.com/?size=1x&id=FHhIGGevoHnP&format=png" width="54px" class="icon-ipa" height="54px" alt="">
+                            <div class="name">Яндекс музыка
+                            <div class="info">Музыка</div>
+                            </div>
+                            </div>
+                            <div class="end">
+                            <div class="button-download">
+                                <a href="#" onclick="addIdToSvg()" download="tinkoff.ipa">
+                                <svg width="35" height="35" fill="none" class="btn-download" id="svg1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <path d="m7 10 5 5 5-5"></path>
+                                    <path d="M12 15V3"></path>
+                                  </svg>
+                                </a>
+                                <svg
+                                    class="ring"
+                                    id="svg2"
+                                    viewBox="25 25 50 50"
+                                    stroke-width="5"
+                                    >
+                                    <circle cx="50" cy="50" r="20" />
+                                </svg>
+                                
+                            </div>
+                            </div>
+                        </div> 
+
+                        <div class="ipatop" id="spotify">
+                            <div class="start">
+                            <img src="https://img.icons8.com/?size=512&id=FwwoyZ9kCHZp&format=png" width="54px" class="icon-ipa" height="54px" alt="">
+                            <div class="name">Spotify
+                            <div class="info">Музыка</div>
+                            </div>
+                            </div>
+                            <div class="end">
+                            <div class="button-download">
+                                <a href="#" onclick="addIdToSvg()" download="tinkoff.ipa">
+                                <svg width="35" height="35" fill="none" class="btn-download" id="svg1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <path d="m7 10 5 5 5-5"></path>
+                                    <path d="M12 15V3"></path>
+                                  </svg>
+                                </a>
+                                <svg
+                                    class="ring"
+                                    id="svg2"
+                                    viewBox="25 25 50 50"
+                                    stroke-width="5"
+                                    >
+                                    <circle cx="50" cy="50" r="20" />
+                                </svg>
+                                
+                            </div>
+                            </div>
+                        </div> 
+
+                
                 </div>
 
 
