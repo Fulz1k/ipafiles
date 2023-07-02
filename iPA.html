@@ -23,7 +23,7 @@ function searchFunction() {
   for (var i = 0; i < elements.length; i++) {
     txtValue = elements[i].textContent || elements[i].innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      elements[i].style.display = 'flex';
+      elements[i].style.display = 'grid';
     } else {
       elements[i].style.display = 'none';
     }
@@ -115,10 +115,13 @@ const analytics = getAnalytics(app);
 
 
                 <div class="ipa" id="tinkoff">
+                    <div class="start">
                     <img src="https://acdn.tinkoff.ru/static/pages/files/ba002123-6b93-4af2-855e-3a33b8bc0a08.png" width="54px" class="icon-ipa" height="54px" alt="">
                     <div class="name">Tinkoff
                     <div class="info">Мобильный банкинг</div>
                     </div>
+                    </div>
+                    <div class="end">
                     <div class="button-download">
                         <a href="#" onclick="addIdToSvg(this)" download="tinkoff.ipa">
                         <svg width="35" height="35" fill="none" class="btn-download" id="svg1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -136,6 +139,7 @@ const analytics = getAnalytics(app);
                             <circle cx="50" cy="50" r="20" />
                         </svg>
                         
+                    </div>
                     </div>
                 </div>
 
