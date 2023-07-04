@@ -116,7 +116,7 @@
         font-weight: 500;
         line-height: 150%;
         color: #6e6e6e;
-        width: 165px;
+        width: 175px;
         
    }
    .button-download{
@@ -140,10 +140,66 @@
     line-height: 140%;
     margin-top: 15px;
   }
-  .all-bottom{
-    margin-top: 30px;
+
+
+  .you-ipa{
+    background-color: #fff;
+    padding-bottom: 25px;
+    margin: 30px 0px 0px 0px;
   }
+  .text-mini{
+    font-family: TT Interphases Pro,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    width: 90%;
+    padding: 10px 10px 10px 10px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 150%;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #6e6e6e;
 }
+.you-form{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  }
+input.you-form-input{
+  display: grid;
+  width: 50%;
+  padding: 10px;
+  margin: 5px 0px;
+  border: 3px #0061FF solid;
+  border-radius: 8px;
+  outline: none;
+  transition: .3s ease;
+  font-family: TT Interphases Pro,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;    
+  font-weight: 600;
+  font-size: 16px;
+}
+input.you-form-input:focus{
+  box-shadow: 0 0 0 4px rgb(0 97 255 / 10%);
+}
+input.you-form-submit{
+  background-color: #0061FF;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  border: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0px;
+  box-shadow: 0 0 0 4px rgb(0 97 255 / 10%);
+}
+input.you-form-submit:hover{
+  background-color: #0350cc;   
+}
+
+}
+
 @media screen and (max-width: 337px){
   .info{
     width: 140px;
